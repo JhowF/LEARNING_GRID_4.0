@@ -1,0 +1,103 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: borde-box;
+
+}
+
+.div1 {
+    display: grid;
+    grid-template-areas: "top top top top"
+        "middle middle middle side"
+        "footer footer footer side";
+    grid-gap: 10px;
+    height: auto;
+    background-color: black;
+}
+
+header {
+
+    height: 20vh;
+    grid-area: top;
+    background-color: #666;
+}
+
+nav ul {
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+
+
+}
+
+nav ul li {
+    list-style-type: none;
+    padding-top: 15px;
+    display: inline;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    height: 50px;
+    width: 80px;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 70px;
+    text-align: center;
+    color: orange;
+
+
+}
+
+nav ul li a {
+    background-color: #666;
+    transition-property: padding-right, font-size;
+    transition-duration: 0.5s;
+
+}
+
+a:hover,
+a:focus {
+
+    padding-right: 15px;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+aside {
+
+    grid-area: side;
+    background-color: #333;
+
+
+
+
+
+}
+
+main {
+
+    grid-area: middle;
+    background-color: #333;
+    height: 60vh;
+
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    height: 20vh;
+}
